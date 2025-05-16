@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saleh Website</title>
+    <!-- رابط ملف CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- تغيير صورة التيوبة -->
+    <link rel="icon" href="images/html.jpeg" type="image/png" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="navbar">
+            <li><a href="#home" onclick="closeMenu()" class="active">Home</a></li>
+            <li><a href="#about-me" onclick="closeMenu()">About Me</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#why-this-program" onclick="closeMenu()">Why This Program?</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+
+    </nav>
+    <!-- -------------------------------------------------------------------------- -->
+    <section id="home" class="home-section">
+        <div class="home-container">
+            <div class="home-text animate-text">
+                <h1>Hello, I'm <span class="highlight">Saleh Masood</span></h1>
+                <p class="subtitle">Web developer, interested in front-end development using HTML, CSS, JS</p>
+                <a href="#contact" class="btn-primary animate-btn">
+                    <i class="fa-solid fa-phone"></i> Let’s Connect
+                </a>
+            </div>
+            <div class="home-image animate-image">
+                <img src="images/profile.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------------------------- -->
+    <section class="about-me" id="about-me">
+        <div class="container">
+            <div class="profile-card">
+                <img src="images/about.jpg" alt="Profile Picture" class="profile-img" />
+            </div>
+
+            <div class="info-box slide-in float-up-down">
+                <h1>About Me</h1>
+                <p>
+                <p class="jop">Computer System Engineer</p>
+                Hello Again , I'm Enginner Saleh Masood <br>
+                I was born in Gaza in 2003 and I am still striving in this country in the hope of a better future for me
+                and my family, and we hope from God for a quick relief and an end to the war. <br>
+                A web developer specializing in building front-end websites.I have more than 3 years of experience
+                in developing applications using JavaScript and Angular.
+                </p>
+            </div>
+            <div class="info-box slide-in delay float-down-up">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScripe</li>
+                    <li>Angular</li>
+                    <li>Database (Sql)</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------- -->
+    <section class="skillset-section" id="skills">
+        <h2 class="section-title">Skill Set</h2>
+        <P class="section-title-2">This is my skill set and how far I have progressed in the skill. </P>
+        <div class="skills-grid">
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <img src="images/html.jpeg" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%"></div>
+                </div>
+                <div class="spans">
+                    <span>100%</span>
+                    <span>expert</span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <img src="images/css.png" alt="CSS">
+                    <span>CSS</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%"></div>
+                </div>
+                <div class="spans">
+                    <span>95%</span>
+                    <span>expert</span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <img src="images/js.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+                <div class="spans">
+                    <span>90%</span>
+                    <span>advanced</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <img src="images/angular.png" alt="JavaScript">
+                    <span>Angular</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 65%"></div>
+                </div>
+                <div class="spans">
+                    <span>65%</span>
+                    <span>Mid-Level</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <img src="images/typescript.png" alt="JavaScript">
+                    <span>TypeScripe</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+                <div class="spans">
+                    <span>75%</span>
+                    <span>Mid-Level</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <img src="images/sql.png" alt="JavaScript">
+                    <span>DataBase (Sql)</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 25%"></div>
+                </div>
+                <div class="spans">
+                    <span>25%</span>
+                    <span>Beginner</span>
+                </div>
+            </div>
+
+            <!-- يمكنك تكرار البلوك لأي سكيل -->
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------- -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="images/company.png" alt="company">
+                <h3>Company Website</h3>
+                <p>A very simpele company website</p>
+                <div class="spans">
+                    <span>Html</span>
+                    <span>Inner Css</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/salehmohammeed/SimpleCompany" target="_blank">GitHub</a>
+                    <a href="https://salehmohammeed.github.io/SimpleCompany/" target="_blank">Visit Website</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/library.png" alt="library">
+                <h3>Library Websit</h3>
+                <p>Simple Library Website</p>
+                <div class="spans">
+                    <span>Html</span>
+                    <span>Css</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/salehmohammeed/library" target="_blank">GitHub</a>
+                    <a href="https://salehmohammeed.github.io/library/" target="_blank">Visit Website</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/MotoryCar.png" alt="MotoryCar">
+                <h3>Motory Car Website</h3>
+                <p>A Motory Car Website With Setting.</p>
+                <div class="spans">
+                    <span>Html</span>
+                    <span>More Css</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/salehmohammeed/MotoryCar" target="_blank">GitHub</a>
+                    <a href="https://salehmohammeed.github.io/MotoryCar/" target="_blank">Visit Website</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/spotify.png" alt="spotify">
+                <h3>Spotify Website</h3>
+                <p>Simple site to play songs</p>
+                <div class="spans">
+                    <span>Html</span>
+                    <span>Css</span>
+                    <span>Json</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/salehmohammeed/spotify" target="_blank">GitHub</a>
+                    <a href="https://salehmohammeed.github.io/spotify/" target="_blank">Visit Website</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/adidas store.png" alt="Adidas Project ">
+                <h3>ِAdidas Store</h3>
+                <p>Adidas shoes selling website</p>
+                <div class="spans">
+                    <span>Html</span>
+                    <span>Css</span>
+                    <span>Js</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/salehmohammeed/Addids-Store-" target="_blank">GitHub</a>
+                    <a href="https://salehmohammeed.github.io/Addids-Store-/" target="_blank">Visit Website</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/Food.png" alt="Food">
+                <h3> Tc Food Center</h3>
+                <p>A Tc Food Center With Angular</p>
+                <div class="spans">
+                    <span>Html</span>
+                    <span>Sacc</span>
+                    <span>Typescript</span>
+                    <span>Angular</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/salehmohammeed/AngularFood" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="specialProject project-card">
+            <img class="specaialImg" src="images/shop1.png" alt="Food">
+            <h3> Clothes Shop</h3>
+            <p>A Clothes Shop Website By Frontend </p>
+            <div class="spans">
+                <span>Html</span>
+                <span>Css</span>
+                <span>Js</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/salehmohammeed/ShopFront/" target="_blank">GitHub</a>
+                <a href="https://salehmohammeed.github.io/ShopFront/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------- -->
+    <section id="why-this-program" class="why-section">
+        <h2 class="section-title">Why This Program?</h2>
+        <div class="why-reason-box">
+            <p>
+                As a passionate learner from <strong>Gaza</strong>, I believe in the power of education to transform
+                lives.
+                Despite the challenges, I’ve always dreamed of continuing my learning journey and building a
+                professional future in tech.
+                <br><br>
+                <strong>Gaza Sky Geeks</strong> offers not just a training opportunity, but a gateway to global skills,
+                mentorship, and a supportive community.
+                This program is my chance to grow, connect, and create impact — not just for myself, but for my
+                community.
+            </p>
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------- -->
+    <section class="contact-section" id="contact">
+        <h2 class="contact-title">Get In Touch With Us Now!</h2>
+        <div class="contact-container">
+            <div class="contact-box">
+                <i class="fas fa-phone icon phoneIcon"></i>
+                <h3>Phone Number</h3>
+                <p>+972597750417 <br> +972567874503</p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-envelope icon"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:salehmasood2003@gmail.com">salehmasood2003@gmail.com</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-map-marker-alt locationIcon"></i>
+                <h3>Location</h3>
+                <p>
+                    Palestine , Gaza , Omar Al-Mokhtar Street
+                </p>
+            </div>
+            <div class="contact-box">
+                <i class="fab fa-github icon"></i>
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/salehmohammeed" target="_blank">github.com/salehmohammeed</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fab fa-instagram icon"></i>
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/salehmas3o_od/" target="_blank">@salehmas3o_od</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fab fa-facebook icon"></i>
+                <h3>Facebook</h3>
+                <p><a href="https://www.facebook.com/profile.php?id=100077736279105&name=xhp_ntfbaction__open_user"
+                        target="_blank">Saleh Masood</a></p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Developed by <strong>Saleh Mohammed Masood</strong></p>
+            <p>&copy; 2025 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ------------------------------------------------------------------- -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
